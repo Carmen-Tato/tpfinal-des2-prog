@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="vendors/slick-1.8.1/slick/slick-theme.css">
+<link rel="stylesheet" href="vendors/jquery.smartcart/dist/css/smart_cart.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    .banner {
+      background-image: url('img/granos-de-cafe.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      text-align: left;
+      position: relative;
+    }
+
+    .banner-content .btn {
+      color: #333;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      background-color: white;
+      border: none;
+    }
+
+    .banner-content .btn:hover {
+      background-color: #f8f9fa;
+    }
+
+    .row.align-items-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+    }
+
+    .autoplay {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .autoplay img {
+      width: 100%;
+      height: auto;
+    }
+
+
+    #catalogo {
+      padding-bottom: 10%;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-md">
+      <a class="navbar-brand" href="index.html"><img class="img-fluid" src="img/logo-blancu-nav.svg" alt="Cafe del sur"></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="presentacion.html">Presentacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="productos.html" aria-current="page">Productos <span
+                class="visually-hidden">(actual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historia.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner container-fluid d-flex align-items-center justify-content-center">
+    <div class="banner-content text-left col-md-8">
+      <h1>Encontrá lo que buscás</h1>
+      <h2>del resto nos ocupamos nosotros</h2>
+      <button class="btn btn-light">Pedí online</button>
+    </div>
+  </div>
+
+  <div class="container pt-5">
+    <div id="catalogo" class="row justify-content-center"></div>
+
+    </div>
+  </div>
+
+  <div class="container pb-5">
+    <div class="col-md-3 carrito-container">
+      <h3>Tu Carrito</h3>
+      <div id="carrito" class="carrito-estilizado"></div>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+  <footer class="custom-footer text-center text-md-start">
+      <div class="container">
+          <div class="row justify-content-center text-center text-md-start">
+              <div class="col-10 col-md-4 footer-logo">
+                  <img src="img/logo-blancu.svg" alt="Café del Sur" class="img-fluid">
+              </div>
+              <div class="col-10 col-md-8">
+                  <div class="mb-2">
+                      <a href="preguntas-frecuentes.html" class="text-white fw-bold">Preguntas frecuentes</a>
+                  </div>
+                  <div class="mb-3">
+                      <a href="contacto.html" class="text-white fw-bold">Contáctanos</a>
+                  </div>
+                  <ul class="list-unstyled mt-3">
+                      <li>
+                          <p>Avenida de los Andes 1234, Buenos Aires, Argentina</p>
+                      </li>
+                      <li>
+                          <p>11 4567-8900</p>
+                      </li>
+                      <li>
+                          <p>contacto@cafedelsur.com.ar</p>
+                      </li>
+                      <li>
+                          <p>@cafedelsur.ar</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="vendors/jquery-3.7.1.min.js"></script>
+
+  <!-- smartcart -->
+  <script src="vendors/jquery.smartcart/dist/js/jquery.smartCart.js"></script>
+
+  <!-- bootstrap -->
+  <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- productos -->
+  <script src="js/productos.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    'use strict';
+
+    $(document).ready(function () {
+
+      var catalogo = $('#catalogo');
+
+      for (let producto of productos) {
+        catalogo.append(
+          '<div class="sc-product-item col-12 col-sm-6 col-md-4 py-3 text-center">' +
+          '<img class="img-fluid mb-3" data-name="product_image" src="img/productos/' + producto.img + '.jpg" alt="' + producto.nombre + '">' +
+          '<h4 data-name="product_name">' + producto.nombre + '</h4>' +
+          '<p data-name="product_desc">' + producto.descripcion + '</p>' +
+          '<p>Precio: $' + producto.precio + '</p>' +
+          '<input name="product_price" value="' + producto.precio + '" type="hidden" />' +
+          '<button class="sc-add-to-cart btn btn-dark">Comprar</button>' +
+          '</div>'
+        )
+      }
+    })
+
+    $(document).ready(function () {
+      $('#carrito').smartCart({
+        cartItemTemplate: `
+          <div class="d-flex">
+            <div>
+              <h4 class="list-group-item-heading">{product_name}</h4>
+            </div>
+          </div>`
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/jquery.whatsapp/venom-button.min.css">
+    <link rel="stylesheet" href="vendors/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="vendors/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+
+    <style>
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+        }
+
+        .banner {
+            background-image: url('../img/cafe-con-leche.jpg');
+            background-size: cover;
+            background-position: center top;
+            color: white;
+            position: relative;
+        }
+
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #carrusel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .autoplay {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .autoplay img {
+            width: 100%;
+            height: auto;
+        }
+
+        .productos-section {
+            padding: 60px 0;
+        }
+
+        .productos-section .card {
+            text-align: center;
+            padding: 20px;
+            border: none;
+        }
+
+        .productos-section .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .section-content {
+            padding: 40px 0;
+            background-color: #f7f7f7;
+        }
+
+        .button-footer {
+            background-color: #7E513B;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-footer:hover {
+            background-color: #df7233;
+        }
+
+        .valores-section {
+            background-color: #f9f9f9;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .valor-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .valor-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .valor-icon {
+            font-size: 70px;
+            color: #df7233;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-md">
+            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="img/logo-blancu-nav.svg"
+                    alt="Café del Sur"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" aria-current="page">Inicio <span
+                                class="visually-hidden">(actual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="presentacion.html">Presentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="banner py-5">
+        <div class="container py-5">
+            <div class="row py-5 align-items-center">
+                <div class="banner-content text-left col-6 offset-1 col-md-5">
+                    <h1>Hay un café perfecto para vos</h1>
+                    <a href="productos.html" class="button-footer mt-4 text-decoration-none">Descubrilo acá</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <section class="intro-text mt-5">
+        <div class="container border border-3 py-5 p-5">
+            <p>Bienvenidos a Café del Sur, la tienda online dedicada a los amantes del buen café. Nuestro objetivo es
+                ofrecerte café de calidad, con opciones sostenibles y frescas para que disfrutes cada taza como si fuera
+                un ritual.</p>
+        </div>
+    </section>
+
+    <section class="valores-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Valores</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="valor-item">
+                        <div class="valor-icon">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <h3 class="valor-titulo">Sabor Artesanal</h3>
+                        <p>Disfrutá de un café elaborado con dedicación y calidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="valor-item">
+                        <div class="valor-icon">
+                            <i class="bi bi-recycle"></i>
+                        </div>
+                        <h3 class="valor-titulo">Café Sostenible</h3>
+                        <p>Contribuí al medio ambiente con cada sorbo de nuestro café.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="valor-item">
+                        <div class="valor-icon">
+                            <i class="bi bi-cloud-sun"></i>
+                        </div>
+                        <h3 class="valor-titulo">Frescura Garantizada</h3>
+                        <p>Los granos más frescos y recién molidos, garantizados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="carrusel" class="row align-items-center">
+        <div class="col-10 my-5">
+            <h2 class="text-center">Los más vendidos</h2>
+            <div class='autoplay'>
+                <div><img src="img/cafe-de-filtro.jpg" alt="cafe de filtro"></div>
+                <div><img src="img/prensa-francesa.jpg" alt="prensa francesa"></div>
+                <div><img src="img/cafetera-italiana.jpg" alt="cafetera italiana"></div>
+                <div><img src="img/molinillo-de-cafe.jpg" alt="molinillo de cafe"></div>
+                <div><img src="img/cafe-de-filtro.jpg" alt="cafe de filtro"></div>
+                <div><img src="img/prensa-francesa.jpg" alt="prensa francesa"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <footer class="custom-footer text-center text-md-start">
+        <div class="container">
+            <div class="row justify-content-center text-center text-md-start">
+                <div class="col-10 col-md-4 footer-logo">
+                    <img src="img/logo-blancu.svg" alt="Café del Sur" class="img-fluid">
+                </div>
+                <div class="col-10 col-md-8">
+                    <div class="mb-2">
+                        <a href="preguntas-frecuentes.html" class="text-white fw-bold">Preguntas frecuentes</a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="contacto.html" class="text-white fw-bold">Contáctanos</a>
+                    </div>
+                    <ul class="list-unstyled mt-3">
+                        <li>
+                            <p>Avenida de los Andes 1234, Buenos Aires, Argentina</p>
+                        </li>
+                        <li>
+                            <p>11 4567-8900</p>
+                        </li>
+                        <li>
+                            <p>contacto@cafedelsur.com.ar</p>
+                        </li>
+                        <li>
+                            <p>@cafedelsur.ar</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="wapp"></div>
+
+    <script src="vendors/jquery-3.7.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+    <script src="vendors/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/galeria.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    { breakpoint: 768, settings: { slidesToShow: 2 } },
+                    { breakpoint: 576, settings: { slidesToShow: 1, arrows: false } }
+                ]
+            });
+
+            $('#wapp').venomButton({
+                phone: '541139102074',
+                chatMessage: '¡Hola! Gracias por comunicarte con Café del Sur. ¿En qué podemos ayudarte?',
+                showPopup: true,
+                position: "right",
+                linkButton: false,
+                showOnIE: false,
+                headerTitle: 'Café del Sur'
+            });
+        });
+    </script>
+
+</body>
+
+</html>

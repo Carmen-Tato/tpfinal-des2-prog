@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendors/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="vendors/slick-1.8.1/slick/slick-theme.css">
+    <title>Historia</title>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0;
+        }
+
+        .mainContainer {
+            display: flex;
+            background-image: url('../img/bg-historia.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+
+        }
+
+        .col-md-4 #image {
+            align-self: center;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .col-md-8 h1 {
+                font-size: 3.5rem;
+            }
+
+            .col-md-8 p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container-md">
+            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="img/logo-blancu-nav.svg"
+                    alt="Cafe del sur"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="presentacion.html">Presentacion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="historia.html"
+                            aria-current="page">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg py-5">
+        <div class="mainContainer">
+            <div class="row">
+                <!-- Primera columna vacía -->
+                <div class="col-2 col-md-4"></div>
+
+                <!-- Contenido principal -->
+                <div class="col-9 col-md-6 offset-md-4">
+                    <h1>Nuestra historia</h1>
+                    <p>
+                        Café del Sur nació de una pasión por el buen café y un profundo respeto por la tierra que lo
+                        cultiva.
+                        Desde nuestros comienzos, siempre tuvimos un propósito claro: ofrecer un café de calidad
+                        excepcional,
+                        respetando tanto el proceso artesanal como el medio ambiente. Todo empezó con un viaje por las
+                        fincas
+                        cafetaleras de América del Sur, donde descubrimos la importancia de la cosecha sostenible y el
+                        tostado
+                        en pequeños lotes. Inspirados por estas raíces, decidimos crear una marca que combinara la
+                        frescura de
+                        los granos recién tostados con un compromiso real con la sostenibilidad. Hoy, Café del Sur es
+                        más que
+                        una taza de café. Es el resultado de años de aprendizaje, dedicación y amor por los sabores
+                        auténticos.
+                        Cada sorbo de nuestro café cuenta la historia de su origen, de las manos que lo cosechan y del
+                        cuidado
+                        con el que llega a tu taza.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer-mainContainer"></div>
+    <div id="footer-container"></div>
+    <footer class="custom-footer text-center text-md-start">
+        <div class="container">
+            <div class="row justify-content-center text-center text-md-start">
+                <div class="col-10 col-md-4 footer-logo">
+                    <img src="img/logo-blancu.svg" alt="Café del Sur" class="img-fluid">
+                </div>
+                <div class="col-10 col-md-8">
+                    <div class="mb-2">
+                        <a href="preguntas-frecuentes.html" class="text-white fw-bold">Preguntas frecuentes</a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="contacto.html" class="text-white fw-bold">Contáctanos</a>
+                    </div>
+                    <ul class="list-unstyled mt-3">
+                        <li>
+                            <p>Avenida de los Andes 1234, Buenos Aires, Argentina</p>
+                        </li>
+                        <li>
+                            <p>11 4567-8900</p>
+                        </li>
+                        <li>
+                            <p>contacto@cafedelsur.com.ar</p>
+                        </li>
+                        <li>
+                            <p>@cafedelsur.ar</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="vendors/jquery-3.7.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

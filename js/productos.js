@@ -50,7 +50,7 @@ const productos = [
     {
         nombre: 'Cafetera Italiana',
         precio: 100000,
-        img: 'Cafetera-italiana',
+        img: 'cafetera-italiana',
         descripcion: 'Cafetera Italiana apta para fuego directo',
     },
 ]
